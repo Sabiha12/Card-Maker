@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_featured_cards">
+
+    <fragment
+        android:id="@+id/nav_featured_cards"
+        android:name="com.sabiha.cardmaker.ui.featuredcards.FeaturedCardsFragment"
+        android:label="@string/menu_featured_cards"
+        tools:layout="@layout/fragment_featured_cards" />
+
+    <fragment
+        android:id="@+id/nav_my_cards"
+        android:name="com.sabiha.cardmaker.ui.mycards.MyCardsFragment"
+        android:label="@string/menu_my_cards"
+        tools:layout="@layout/fragment_my_cards" />
+
+    <fragment
+        android:id="@+id/nav_received_cards"
+        android:name="com.sabiha.cardmaker.ui.receivedcards.ReceivedCardsFragment"
+        android:label="@string/menu_received_cards"
+        tools:layout="@layout/fragment_received_cards" />
+
+    <fragment
+        android:id="@+id/nav_change_pass"
+        android:name="com.sabiha.cardmaker.ui.changepass.ChangePasswordFragment"
+        android:label="@string/menu_change_pass"
+        tools:layout="@layout/fragment_change_password" />
+</navigation>

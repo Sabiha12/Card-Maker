@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "800164132265",
+    "project_id": "cardmaker-7c017",
+    "storage_bucket": "cardmaker-7c017.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:800164132265:android:38f0e98201f2761e58c0b8",
+        "android_client_info": {
+          "package_name": "com.sabiha.cardmaker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "800164132265-3jeg02tuudfsj5mo1o6ei19jn0k9u09a.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sabiha.cardmaker",
+            "certificate_hash": "3b9f912cba5f78e28e093af0c5b96f2341ae9aee"
+          }
+        },
+        {
+          "client_id": "800164132265-8ccbrd6e9icav8hilrkc8ejnqb3ipr8v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB0cLeOI4sbWyZlQTMp_Ar7jWFCrokCjr0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "800164132265-8ccbrd6e9icav8hilrkc8ejnqb3ipr8v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,249 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/purple_700"
+            android:elevation="@dimen/_2sdp"
+            app:theme="@style/ToolbarTheme"
+            app:titleTextColor="@color/white" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/toolbar"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_5sdp">
+
+            <ImageView
+                android:id="@+id/ivCard"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_200sdp"
+                android:scaleType="fitXY"
+                android:src="@drawable/cardedit10"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/etName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_45sdp"
+                android:layout_marginTop="@dimen/_35sdp"
+                android:background="@color/transparent"
+                android:hint="Name"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="@dimen/_15ssp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@id/ivCard"
+                app:layout_constraintTop_toTopOf="@id/ivCard" />
+
+            <EditText
+                android:id="@+id/etDesignation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@color/transparent"
+                android:hint="Designation"
+                android:imeOptions="actionNext"
+                android:inputType="textPhonetic"
+                android:nextFocusForward="@id/etSkill1"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintStart_toStartOf="@id/etName"
+                app:layout_constraintTop_toBottomOf="@id/etName" />
+
+            <EditText
+                android:id="@+id/etSkill1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_32sdp"
+                android:background="@color/transparent"
+                android:hint="Skill 1"
+                android:inputType="textPhonetic"
+                android:nextFocusForward="@id/etSkill2"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="@dimen/_10ssp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/etDesignation" />
+
+            <!--   <view
+                   android:layout_width="@dimen/_50sdp"
+                   android:layout_height="@dimen/_1sdp"
+                   android:layout_marginTop="@dimen/_2sdp"
+                   android:layout_marginStart="@dimen/_20sdp"
+                   app:layout_constraintStart_toStartOf="parent"
+                   app:layout_constraintTop_toBottomOf="@id/id_text_entry"/>-->
+
+            <EditText
+                android:id="@+id/etSkill2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:background="@color/transparent"
+                android:hint="Skill 2"
+                android:inputType="textPhonetic"
+                android:nextFocusForward="@id/etSkill3"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:layout_marginBottom="@dimen/_62sdp"
+                android:textColorHint="@color/white"
+                android:textSize="@dimen/_10ssp"
+                app:layout_constraintStart_toStartOf="@id/etSkill1"
+                app:layout_constraintBottom_toBottomOf="parent" />
+
+
+            <EditText
+                android:id="@+id/etSkill3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"
+                android:hint="Skill 3"
+                android:imeOptions="actionNext"
+                android:inputType="textPhonetic"
+                android:nextFocusForward="@id/etMobile"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:layout_marginBottom="@dimen/_45sdp"
+                android:textSize="@dimen/_10ssp"
+                app:layout_constraintStart_toStartOf="@id/etSkill1"
+                app:layout_constraintBottom_toBottomOf="parent" />
+
+
+
+            <!--  <EditText
+                  android:id="@+id/information_text_three"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                 android:textColor="@color/white"
+                  android:text="Skill 3"
+                  android:textSize="@dimen/_10ssp"
+                  app:layout_constraintStart_toStartOf="@id/information_text"
+                  app:layout_constraintTop_toBottomOf="@id/information_text" />-->
+
+            <EditText
+                android:id="@+id/etMobile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginEnd="@dimen/_25sdp"
+                android:layout_marginBottom="@dimen/_65sdp"
+                android:background="@color/transparent"
+                android:hint="Mobile Number"
+                android:inputType="phone"
+                android:nextFocusForward="@id/etEmail"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="@dimen/_8ssp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <EditText
+                android:id="@+id/etEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:background="@color/transparent"
+                android:hint="Email"
+                android:imeOptions="actionDone"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="@dimen/_8ssp"
+                app:layout_constraintStart_toStartOf="@+id/etMobile"
+                app:layout_constraintTop_toBottomOf="@id/etMobile" />
+
+            <!--   <EditText
+                   android:id="@+id/information_text_entry"
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="@dimen/_8sdp"
+                   android:layout_marginEnd="@dimen/_16sdp"
+                   android:background="@color/white"
+                   android:lines="5"
+                   app:layout_constraintEnd_toEndOf="parent"
+                   app:layout_constraintStart_toStartOf="@id/information_text"
+                   app:layout_constraintTop_toBottomOf="@id/information_text"
+                   tools:text="Some random text in here" />-->
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <Button
+            android:id="@+id/btnPreview"
+            style="@style/Widget.MaterialComponents.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:gravity="center"
+            android:paddingTop="@dimen/_5sdp"
+            android:paddingBottom="@dimen/_5sdp"
+            android:text="@string/btn_preview"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_16sdp"
+            app:backgroundTint="@color/colorPink"
+            app:cornerRadius="@dimen/_5sdp" />
+
+        <!--   <LinearLayout
+               android:id="@+id/llButton"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_alignParentBottom="true"
+               android:layout_marginBottom="@dimen/_20sdp"
+               android:gravity="center"
+               android:orientation="horizontal">
+
+               &lt;!&ndash;Preview button: alada activity/ bottom sheet e details ghulo sob tik rekhe txtview te set kore confirm korte bolbo save korle ota korbe&ndash;&gt;
+               &lt;!&ndash;<Button
+                   android:id="@+id/btnPreview"
+                   style="@style/Widget.MaterialComponents.Button"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginStart="@dimen/_10sdp"
+                   android:layout_marginEnd="@dimen/_10sdp"
+                   android:paddingTop="@dimen/_5sdp"
+                   android:paddingBottom="@dimen/_5sdp"
+                   android:text="@string/btn_save"
+                   android:textColor="@color/white"
+                   android:textSize="@dimen/_16sdp"
+                   app:backgroundTint="@color/colorPink"
+                   app:cornerRadius="@dimen/_5sdp" />&ndash;&gt;
+
+               &lt;!&ndash; <Button
+                    android:id="@+id/btnShare"
+                    style="@style/Widget.MaterialComponents.Button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:paddingTop="@dimen/_5sdp"
+                    android:paddingBottom="@dimen/_5sdp"
+                    android:text="@string/btn_share"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_16sdp"
+                    app:backgroundTint="@color/colorNavy"
+                    app:cornerRadius="@dimen/_5sdp" />&ndash;&gt;
+           </LinearLayout>-->
+
+    </RelativeLayout>
+</layout>

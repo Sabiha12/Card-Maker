@@ -1,0 +1,570 @@
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:layout_marginBottom="@dimen/_5sdp">
+
+        <ImageView
+            android:id="@+id/ivProductImage"
+            android:layout_width="@dimen/_300sdp"
+            android:layout_height="@dimen/_200sdp"
+            android:scaleType="fitXY"
+            android:src="@drawable/cardedit10"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+       <!-- <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_more"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            app:layout_constraintTop_toTopOf="@id/ivProductImage"
+            app:layout_constraintEnd_toEndOf="@id/ivProductImage" />-->
+
+        <TextView
+            android:id="@+id/name_text_entry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_45sdp"
+            android:layout_marginTop="@dimen/_35sdp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_15ssp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/ivProductImage"
+            app:layout_constraintTop_toTopOf="@id/ivProductImage" />
+
+        <TextView
+            android:id="@+id/id_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:textSize="@dimen/_12ssp"
+            app:layout_constraintStart_toStartOf="@id/name_text_entry"
+            app:layout_constraintTop_toBottomOf="@id/name_text_entry" />
+
+        <TextView
+            android:id="@+id/tvSkill1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_35sdp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_10ssp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/id_text" />
+
+        <!--   <view
+               android:layout_width="@dimen/_50sdp"
+               android:layout_height="@dimen/_1sdp"
+               android:layout_marginTop="@dimen/_2sdp"
+               android:layout_marginStart="@dimen/_20sdp"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintTop_toBottomOf="@id/id_text_entry"/>-->
+
+        <TextView
+            android:id="@+id/tvSkill2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:background="@color/transparent"
+            android:nextFocusForward="@id/etMobile"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:layout_marginBottom="@dimen/_62sdp"
+            android:textColorHint="@color/white"
+            android:textSize="@dimen/_10ssp"
+            app:layout_constraintStart_toStartOf="@id/tvSkill1"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+
+        <TextView
+            android:id="@+id/tvSkill3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            android:nextFocusForward="@id/etSkill2"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:layout_marginBottom="@dimen/_45sdp"
+            android:textSize="@dimen/_10ssp"
+            app:layout_constraintStart_toStartOf="@id/tvSkill1"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+        <!--<EditText
+            android:id="@+id/information_text_try"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:textColor="@color/white"
+            android:text="Skill 3"
+            android:textSize="@dimen/_10ssp"
+            app:layout_constraintStart_toStartOf="@id/information_text"
+            app:layout_constraintTop_toBottomOf="@id/information_text" />-->
+
+        <TextView
+            android:id="@+id/contact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_30sdp"
+            android:layout_marginBottom="@dimen/_65sdp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12ssp"
+            app:layout_constraintBottom_toBottomOf="@id/ivProductImage"
+            app:layout_constraintEnd_toEndOf="@id/ivProductImage" />
+
+        <TextView
+            android:id="@+id/Email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12ssp"
+            app:layout_constraintStart_toStartOf="@+id/contact"
+            app:layout_constraintTop_toBottomOf="@id/contact" />
+
+        <!--   <EditText
+               android:id="@+id/information_text_entry"
+               android:layout_width="0dp"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="@dimen/_8sdp"
+               android:layout_marginEnd="@dimen/_16sdp"
+               android:background="@color/white"
+               android:lines="5"
+               app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintStart_toStartOf="@id/information_text"
+               app:layout_constraintTop_toBottomOf="@id/information_text"
+               tools:text="Some random text in here" />-->
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!--<androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_5sdp">
+
+        <ImageView
+            android:id="@+id/ivProductImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@drawable/cardedit10"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/name_text_entry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_50sdp"
+            android:layout_marginTop="@dimen/_40sdp"
+            android:background="@color/white"
+            android:textSize="@dimen/_15ssp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/ivProductImage"
+            app:layout_constraintTop_toTopOf="@id/ivProductImage"
+            android:text="Name:" />
+
+        <TextView
+            android:id="@+id/id_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:background="@color/white"
+            android:text="Designation:"
+            android:textSize="@dimen/_12ssp"
+            app:layout_constraintStart_toStartOf="@id/name_text_entry"
+            app:layout_constraintTop_toBottomOf="@id/name_text_entry" />
+
+        <TextView
+            android:id="@+id/id_text_entry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_32sdp"
+            android:background="@color/white"
+            android:textSize="@dimen/_12ssp"
+            app:layout_constraintStart_toStartOf="@id/ivProductImage"
+            app:layout_constraintTop_toBottomOf="@id/id_text"
+            android:text="Skill 1" />
+
+        <TextView
+            android:id="@+id/information_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="@color/white"
+            android:text="Skill 2"
+            android:textSize="@dimen/_12ssp"
+            app:layout_constraintStart_toStartOf="@id/id_text_entry"
+            app:layout_constraintTop_toBottomOf="@id/id_text_entry" />
+
+        <TextView
+            android:id="@+id/information_text_three"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="@color/white"
+            android:text="Skill 3"
+            android:textSize="@dimen/_12ssp"
+            app:layout_constraintStart_toStartOf="@id/information_text"
+            app:layout_constraintTop_toBottomOf="@id/information_text" />
+
+        <TextView
+            android:id="@+id/contact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="@color/white"
+            android:layout_marginBottom="@dimen/_70sdp"
+            android:layout_marginEnd="@dimen/_30sdp"
+            android:text="Phone No:"
+            android:textSize="@dimen/_12ssp"
+            app:layout_constraintEnd_toEndOf="@id/ivProductImage"
+            app:layout_constraintBottom_toBottomOf="@id/ivProductImage" />
+        <TextView
+            android:id="@+id/Email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:background="@color/white"
+            android:text="Email:"
+            android:textSize="@dimen/_12ssp"
+            app:layout_constraintStart_toStartOf="@+id/contact"
+            app:layout_constraintTop_toBottomOf="@id/contact"/>
+
+        &lt;!&ndash;   <EditText
+               android:id="@+id/information_text_entry"
+               android:layout_width="0dp"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="@dimen/_8sdp"
+               android:layout_marginEnd="@dimen/_16sdp"
+               android:background="@color/white"
+               android:lines="5"
+               app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintStart_toStartOf="@id/information_text"
+               app:layout_constraintTop_toBottomOf="@id/information_text"
+               tools:text="Some random text in here" />&ndash;&gt;
+
+    </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+
+</androidx.cardview.widget.CardView><!--
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="@dimen/_20sdp"
+    android:layout_marginStart="@dimen/_15sdp"
+    android:layout_marginEnd="@dimen/_15sdp"
+    android:layout_marginBottom="@dimen/_10sdp"
+    app:cardElevation="@dimen/_15sdp"
+
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/_5sdp">
+
+
+                <ImageView
+                    android:id="@+id/ivProductImage"
+                    android:layout_width="wrap_content"
+                    android:src="@drawable/cardedit10"
+                    android:layout_centerInParent="true"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitXY"
+
+                    />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>-->
+
+    <!--
+    <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/toolbar"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_5sdp">
+
+            <ImageView
+                android:id="@+id/ivProductImage"
+                android:layout_width="@dimen/_300sdp"
+                android:layout_height="@dimen/_200sdp"
+                android:scaleType="fitXY"
+                android:src="@drawable/cardedit10"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/name_text_entry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_45sdp"
+                android:layout_marginTop="@dimen/_35sdp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_15ssp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@id/ivProductImage"
+                app:layout_constraintTop_toTopOf="@id/ivProductImage"
+                android:text="Name:" />
+
+            <TextView
+                android:id="@+id/id_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:text="Designation:"
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintStart_toStartOf="@id/name_text_entry"
+                app:layout_constraintTop_toBottomOf="@id/name_text_entry" />
+
+            <TextView
+                android:id="@+id/id_text_entry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_35sdp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_10ssp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/id_text"
+                android:text="Skill 1" />
+
+            &lt;!&ndash;   <view
+                   android:layout_width="@dimen/_50sdp"
+                   android:layout_height="@dimen/_1sdp"
+                   android:layout_marginTop="@dimen/_2sdp"
+                   android:layout_marginStart="@dimen/_20sdp"
+                   app:layout_constraintStart_toStartOf="parent"
+                   app:layout_constraintTop_toBottomOf="@id/id_text_entry"/>&ndash;&gt;
+
+            <TextView
+                android:id="@+id/information_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Skill 2"
+                android:textColor="@color/white"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:textSize="@dimen/_10ssp"
+                app:layout_constraintStart_toStartOf="@id/id_text_entry"
+                app:layout_constraintTop_toBottomOf="@id/id_text_entry" />
+
+              &lt;!&ndash;<EditText
+                  android:id="@+id/information_text_try"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                 android:textColor="@color/white"
+                  android:text="Skill 3"
+                  android:textSize="@dimen/_10ssp"
+                  app:layout_constraintStart_toStartOf="@id/information_text"
+                  app:layout_constraintTop_toBottomOf="@id/information_text" />&ndash;&gt;
+
+            <TextView
+                android:id="@+id/contact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginEnd="@dimen/_30sdp"
+                android:layout_marginBottom="@dimen/_65sdp"
+                android:textColor="@color/white"
+                android:text="Phone No:"
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintBottom_toBottomOf="@id/ivProductImage"
+                app:layout_constraintEnd_toEndOf="@id/ivProductImage" />
+
+            <TextView
+                android:id="@+id/Email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:text="Email:"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintStart_toStartOf="@+id/contact"
+                app:layout_constraintTop_toBottomOf="@id/contact" />
+
+            &lt;!&ndash;   <EditText
+                   android:id="@+id/information_text_entry"
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="@dimen/_8sdp"
+                   android:layout_marginEnd="@dimen/_16sdp"
+                   android:background="@color/white"
+                   android:lines="5"
+                   app:layout_constraintEnd_toEndOf="parent"
+                   app:layout_constraintStart_toStartOf="@id/information_text"
+                   app:layout_constraintTop_toBottomOf="@id/information_text"
+                   tools:text="Some random text in here" />&ndash;&gt;
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        &lt;!&ndash;<androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5sdp">
+
+            <ImageView
+                android:id="@+id/ivProductImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:src="@drawable/cardedit10"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/name_text_entry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_50sdp"
+                android:layout_marginTop="@dimen/_40sdp"
+                android:background="@color/white"
+                android:textSize="@dimen/_15ssp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@id/ivProductImage"
+                app:layout_constraintTop_toTopOf="@id/ivProductImage"
+                android:text="Name:" />
+
+            <TextView
+                android:id="@+id/id_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:background="@color/white"
+                android:text="Designation:"
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintStart_toStartOf="@id/name_text_entry"
+                app:layout_constraintTop_toBottomOf="@id/name_text_entry" />
+
+            <TextView
+                android:id="@+id/id_text_entry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_32sdp"
+                android:background="@color/white"
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintStart_toStartOf="@id/ivProductImage"
+                app:layout_constraintTop_toBottomOf="@id/id_text"
+                android:text="Skill 1" />
+
+            <TextView
+                android:id="@+id/information_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@color/white"
+                android:text="Skill 2"
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintStart_toStartOf="@id/id_text_entry"
+                app:layout_constraintTop_toBottomOf="@id/id_text_entry" />
+
+            <TextView
+                android:id="@+id/information_text_three"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@color/white"
+                android:text="Skill 3"
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintStart_toStartOf="@id/information_text"
+                app:layout_constraintTop_toBottomOf="@id/information_text" />
+
+            <TextView
+                android:id="@+id/contact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@color/white"
+                android:layout_marginBottom="@dimen/_70sdp"
+                android:layout_marginEnd="@dimen/_30sdp"
+                android:text="Phone No:"
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintEnd_toEndOf="@id/ivProductImage"
+                app:layout_constraintBottom_toBottomOf="@id/ivProductImage" />
+            <TextView
+                android:id="@+id/Email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:background="@color/white"
+                android:text="Email:"
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintStart_toStartOf="@+id/contact"
+                app:layout_constraintTop_toBottomOf="@id/contact"/>
+
+            &lt;!&ndash;   <EditText
+                   android:id="@+id/information_text_entry"
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="@dimen/_8sdp"
+                   android:layout_marginEnd="@dimen/_16sdp"
+                   android:background="@color/white"
+                   android:lines="5"
+                   app:layout_constraintEnd_toEndOf="parent"
+                   app:layout_constraintStart_toStartOf="@id/information_text"
+                   app:layout_constraintTop_toBottomOf="@id/information_text"
+                   tools:text="Some random text in here" />&ndash;&gt;
+
+        </androidx.constraintlayout.widget.ConstraintLayout>&ndash;&gt;
+
+
+    </androidx.cardview.widget.CardView>&lt;!&ndash;
+    <?xml version="1.0" encoding="utf-8"?>
+    <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginEnd="@dimen/_15sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        app:cardElevation="@dimen/_15sdp"
+
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/_5sdp">
+
+
+                    <ImageView
+                        android:id="@+id/ivProductImage"
+                        android:layout_width="wrap_content"
+                        android:src="@drawable/cardedit10"
+                        android:layout_centerInParent="true"
+                        android:layout_height="wrap_content"
+                        android:scaleType="fitXY"
+
+                        />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>&ndash;&gt;
+    -->

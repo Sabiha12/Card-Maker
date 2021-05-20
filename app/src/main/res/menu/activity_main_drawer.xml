@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_featured_cards"
+            android:icon="@drawable/ic_assignment"
+            android:title="@string/menu_featured_cards" />
+        <item
+            android:id="@+id/nav_my_cards"
+            android:icon="@drawable/ic_assignment"
+            android:title="@string/menu_my_cards" />
+        <item
+            android:id="@+id/nav_received_cards"
+            android:icon="@drawable/ic_present_to_all"
+            android:title="@string/menu_received_cards" />
+ <!--       <item
+            android:id="@+id/nav_change_pass"
+            android:icon="@drawable/ic_screen_lock_portrait"
+            android:title="@string/menu_change_pass" />-->
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_exit_to_app"
+            android:title="@string/menu_logout" />
+    </group>
+</menu>
