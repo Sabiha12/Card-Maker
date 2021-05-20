@@ -152,6 +152,9 @@ public class CardDetailsActivity extends BaseActivity {
 
         btnSave.setOnClickListener(this);
         btnShare.setOnClickListener(this);
+
+        setData();
+
         btnSave.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -186,7 +189,6 @@ public class CardDetailsActivity extends BaseActivity {
                 }
             }
         });
-        setData();
     }
 
 
@@ -489,6 +491,7 @@ public class CardDetailsActivity extends BaseActivity {
         tvDesignation.setText(designation);
         tvSkill1.setText(skill1);
         tvSkill2.setText(skill2);
+        tvSkill3.setText(skill3);
         tvMobile.setText(mobile);
         tvEmail.setText(email);
     }

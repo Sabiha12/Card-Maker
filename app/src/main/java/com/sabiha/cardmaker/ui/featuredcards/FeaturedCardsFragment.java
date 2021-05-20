@@ -49,7 +49,7 @@ public class FeaturedCardsFragment extends BaseFragment {
                     @Override
                     protected void onBindViewHolder(@NonNull FeaturedCardsViewHolder holder, int position, @NonNull final FeaturedCards model) {
 
-                        Picasso.get().load(model.getImage()).into(holder.ivProductImage);
+                        Picasso.get().load(model.getImage()).into(holder.ivCardBackground);
 
 
                         holder.itemView.setOnClickListener(new View.OnClickListener() {

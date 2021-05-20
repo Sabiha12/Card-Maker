@@ -13,7 +13,7 @@
         android:layout_marginBottom="@dimen/_5sdp">
 
         <ImageView
-            android:id="@+id/ivProductImage"
+            android:id="@+id/ivCardBackground"
             android:layout_width="@dimen/_300sdp"
             android:layout_height="@dimen/_200sdp"
             android:scaleType="fitXY"
@@ -32,7 +32,7 @@
             app:layout_constraintEnd_toEndOf="@id/ivProductImage" />-->
 
         <TextView
-            android:id="@+id/name_text_entry"
+            android:id="@+id/tvName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/_45sdp"
@@ -40,18 +40,18 @@
             android:textColor="@color/white"
             android:textSize="@dimen/_15ssp"
             android:textStyle="bold"
-            app:layout_constraintStart_toStartOf="@id/ivProductImage"
-            app:layout_constraintTop_toTopOf="@id/ivProductImage" />
+            app:layout_constraintStart_toStartOf="@id/ivCardBackground"
+            app:layout_constraintTop_toTopOf="@id/ivCardBackground" />
 
         <TextView
-            android:id="@+id/id_text"
+            android:id="@+id/tvDesignation"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="@color/white"
             android:layout_marginTop="@dimen/_5sdp"
             android:textSize="@dimen/_12ssp"
-            app:layout_constraintStart_toStartOf="@id/name_text_entry"
-            app:layout_constraintTop_toBottomOf="@id/name_text_entry" />
+            app:layout_constraintStart_toStartOf="@id/tvName"
+            app:layout_constraintTop_toBottomOf="@id/tvName" />
 
         <TextView
             android:id="@+id/tvSkill1"
@@ -62,7 +62,7 @@
             android:textColor="@color/white"
             android:textSize="@dimen/_10ssp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/id_text" />
+            app:layout_constraintTop_toBottomOf="@id/tvDesignation" />
 
         <!--   <view
                android:layout_width="@dimen/_50sdp"
@@ -113,7 +113,7 @@
             app:layout_constraintTop_toBottomOf="@id/information_text" />-->
 
         <TextView
-            android:id="@+id/contact"
+            android:id="@+id/tvMobile"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/_5sdp"
@@ -121,18 +121,18 @@
             android:layout_marginBottom="@dimen/_65sdp"
             android:textColor="@color/white"
             android:textSize="@dimen/_12ssp"
-            app:layout_constraintBottom_toBottomOf="@id/ivProductImage"
-            app:layout_constraintEnd_toEndOf="@id/ivProductImage" />
+            app:layout_constraintBottom_toBottomOf="@id/ivCardBackground"
+            app:layout_constraintEnd_toEndOf="@id/ivCardBackground" />
 
         <TextView
-            android:id="@+id/Email"
+            android:id="@+id/tvEmail"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/_20sdp"
             android:textColor="@color/white"
             android:textSize="@dimen/_12ssp"
-            app:layout_constraintStart_toStartOf="@+id/contact"
-            app:layout_constraintTop_toBottomOf="@id/contact" />
+            app:layout_constraintStart_toStartOf="@+id/tvMobile"
+            app:layout_constraintTop_toBottomOf="@id/tvMobile" />
 
         <!--   <EditText
                android:id="@+id/information_text_entry"

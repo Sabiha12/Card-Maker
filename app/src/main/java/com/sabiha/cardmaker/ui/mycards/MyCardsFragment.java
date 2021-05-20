@@ -67,7 +67,7 @@ public class MyCardsFragment extends BaseFragment {
                     @Override
                     protected void onBindViewHolder(@NonNull FeaturedCardsViewHolder holder, int position, @NonNull final MyCards model) {
 
-                        Picasso.get().load(model.getEditedcard()).into(holder.ivProductImage);
+                        Picasso.get().load(model.getEditedcard()).into(holder.ivCardBackground);
 
 
                         holder.itemView.setOnClickListener(new View.OnClickListener() {

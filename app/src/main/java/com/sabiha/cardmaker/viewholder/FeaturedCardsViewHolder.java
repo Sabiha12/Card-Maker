@@ -11,13 +11,12 @@ import com.sabiha.cardmaker.Interface.ItemClickListener;
 import com.sabiha.cardmaker.R;
 
 public class FeaturedCardsViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
-    public TextView tvProductName, tvProductPrice;
-    public ImageView ivProductImage;
+    public ImageView ivCardBackground;
     public ItemClickListener itemClickListener;
 
     public FeaturedCardsViewHolder(@NonNull View itemView) {
         super(itemView);
-        ivProductImage = itemView.findViewById(R.id.ivProductImage);
+        ivCardBackground = itemView.findViewById(R.id.ivCardBackground);
     }
 
     @Override
