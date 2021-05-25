@@ -1,5 +1,5 @@
 ### Introduction
-Business/Visiting card maker and share with available sharable application on android device.
+Business/Visiting card maker and share with available sharable application on android device. This is the reimplemented and updated version of My Final Year(Bsc in CSE) Project. But i have not added some features from previous one yet. I will eventually do it later.
 
 ### Features
 - Registration
